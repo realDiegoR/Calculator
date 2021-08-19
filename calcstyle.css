@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+}
+body{
+  align-items: center;
+  background: #2c3e50;
+  display: flex;
+  font-family: "Spartan", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  transition: 100ms background;
+  color: white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.themes{
+  display: flex;
+  width: 135px;
+  justify-content:space-between;
+  font-size: 12px;
+  font-weight: bold;
+  font-weight: normal;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+.themes_box{
+  display: flex;
+  flex-direction: column;
+}
+.themes_numbers{
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.themes_button{
+  height: 20px;
+  background: rgba(0,0,0,.2);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 2.4px 4px;
+  width: 80px;
+}
+.themes_ball{
+  position: relative;
+  transition: 300ms all;
+  height: 15px;
+  width: 15px;
+  background: red;
+  border-radius: 50%;
+}
+.container{
+  border-radius: 20px;
+  min-height: 200px;
+  width: 450px;
+}
+.output{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  height: 80px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  padding: 10px;
+}
+.buttons{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.button{
+  background: #ecf0f1;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #9e9e9e;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 26px;
+  font-family: "Spartan", sans-serif;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  transition: 150ms all;
+  width: 93.5px;
+}
+.button:active{
+  transform: scale(0.95);
+}
+.purple{
+  background: #7986cb;
+  box-shadow: 0 4px 0 #5c6bc0;
+  color: white;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.red{
+  background: #e63935;
+  box-shadow: 0 4px 0 #d32f2f;
+  padding-top: 18px;
+  color: white;
+}
+.grow{
+  flex-grow: 1;
+}
+
+/* TEMA 2 */
+.body-white{
+  background: #ddd;
+  color: black;
+}
+.output-white{
+  background: #f5f5f5;
+  color: black;
+}
+.turquoise{
+  background: #00838f;
+  box-shadow: 0 4px 0 #006064;
+}
+.orange{
+  background: #f57c00;
+  box-shadow: 0 4px 0 #ef6c00
+}
+.ball-orange{
+  background: #f57c00;
+}
+
+
+/* TEMA 3 */
+.body-purple{
+  background: #31034d;
+  color: yellow;
+}
+.output-purple{
+  background: rgba(0,0,0,0.3);
+  color: yellow;
+}
+.buttons-purple{
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 0 #7a1b7a;
+  color: yellow;
+}
+.purple3{
+  background: #6b1592;
+  box-shadow: 0 4px 0 #8f24ba;
+  color: white;
+}
+.blue{
+  background: #4fc3f7;
+  box-shadow: 0 4px 0 #039be5;
+  color: black;
+}
+.ball-blue{
+  background: #00b0ff
+}
+
+@media (max-width: 450px){
+  .container{
+    width: 90%;
+  }
+  .button{
+    flex-basis: 20%;
+    flex-grow: 1;
+  }
+}
+@media (max-width: 360px){
+  .button{
+    height: 50px;
+    flex-basis: 15%;
+    font-size: 16px;
+  }
+  .purple{
+    font-size: 10px;
+  }
+}

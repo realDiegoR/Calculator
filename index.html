@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="calcstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+  </head>
+  <body id="body">
+    <div class="container" id="container">
+      <div class="header">
+        <p>Calculator</p>
+        <div class="themes">
+          <p>THEME</p>
+          <div class="themes_box">
+            <div class="themes_numbers">
+              <p>1</p><p>2</p><p>3</p>
+            </div>
+            <div class="themes_button" id="theme">
+              <div class="themes_ball" id="ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="output" id="output"></div>
+      <div class="buttons">
+        <input class="button" type="button" name="numero" value="7">
+        <input class="button" type="button" name="numero" value="8">
+        <input class="button" type="button" name="numero" value="9">
+        <input class="button purple" type="button" name="digital" value="DEL" id="del">
+        <input class="button" type="button" name="numero" value="4">
+        <input class="button" type="button" name="numero" value="5">
+        <input class="button" type="button" name="numero" value="6">
+        <input class="button" type="button" name="operaciones" value="+">
+        <input class="button" type="button" name="numero" value="1">
+        <input class="button" type="button" name="numero" value="2">
+        <input class="button" type="button" name="numero" value="3">
+        <input class="button" type="button" name="operaciones" value="-">
+        <input class="button" type="button" name="operaciones" value=".">
+        <input class="button" type="button" name="numero" value="0">
+        <input class="button" type="button" name="operaciones" value="/">
+        <input class="button" type="button" name="operaciones" value="*">
+        <input class="button purple grow" type="button" name="digital" value="RESET" id="reset">
+        <input class="button red grow" type="button" name="digital" value="=" id="equal">
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
