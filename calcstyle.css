@@ -63,19 +63,34 @@ body{
   min-height: 200px;
   width: 450px;
 }
+.output-outer-box{
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
 .output{
   background-color: rgba(0,0,0,0.3);
-  border-radius: 8px;
   color: white;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
   align-items: center;
   font-size: 36px;
   font-weight: bold;
   height: 80px;
-  margin-bottom: 15px;
-  overflow-x: auto;
+  overflow: auto;
   padding: 10px;
+}
+.output::-webkit-scrollbar {
+  height: 2px;
+}
+.output::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.output::-webkit-scrollbar-thumb {
+  background: #888;
+  z-index: 9;
+  border-radius: 50px;
+
 }
 .buttons{
   background-color: rgba(0,0,0,0.2);
