@@ -69,26 +69,27 @@ function agregarNumero(ev) {
 function agregarOperacion(ev){
   if(output.innerHTML.includes("<i>")) output.innerHTML = '';
   let touched = ev.target.value;
-  if( touched === "/" && output.innerHTML === '' || touched === "*" && output.innerHTML === ''){
-  }
-  else{
   output.innerHTML += touched;
-  }
 }
 
 // DIG --- RESULTADO --------
  digital[2].addEventListener('click', equal);
+
  function equal(){
    try{
      if(output.innerHTML){
+
+       if(output.innerHTML.includes("//")) throw Error 
+
        output.innerHTML = eval(output.innerHTML);
+
        if(!isFinite(output.innerHTML)) {
          output.innerHTML = "<i>Math Error</i>"
        }
+
        if(output.innerHTML.includes(".")) {
          output.innerHTML = parseFloat(output.innerHTML).toFixed(2)
        }
-       console.log('Resultado hecho!')
      }
    } catch(error){
      output.innerHTML = "<i>Syntax Error</i>"
